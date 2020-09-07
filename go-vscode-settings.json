@@ -1,0 +1,47 @@
+{
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.rulers": [
+    130,
+    150
+  ],
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true
+  },
+  "files.autoSave": "onFocusChange",
+  "go.autocompleteUnimportedPackages": true,
+  "go.formatTool": "goimports",
+  "go.useLanguageServer": true,
+  "vim.leader": ",",
+  "vim.easymotion": true,
+  "vim.normalModeKeyBindings": [
+    {
+      "before": [
+        "s"
+      ],
+      "after": [
+        "<leader>",
+        "<leader>",
+        "s"
+      ]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": [
+        "s"
+      ],
+      "after": [
+        "<leader>",
+        "<leader>",
+        "s"
+      ]
+    }
+  ],
+  "editor.lineNumbers": "relative"
+}
