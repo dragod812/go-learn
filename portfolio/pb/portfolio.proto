@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package portfolio;
+
+option go_package = "portfolio/pb;portfoliopb";
+
+message Blog {
+  string id = 1;
+  string title = 2;
+  string content = 3;
+}
+
+message CreateBlogRequest {
+  Blog blog = 1;
+}
+
+message CreateBlogResponse {
+  Blog blog = 1; // Blog will contain an ID
+}
+
+message ReadBlogRequest{
+  string blog_id = 1;
+}
+
+message ReadBlogResponse{
+  Blog blog = 1;
+}
+
+service BlogService {
+  rpc CreateBlog (CreateBlogRequest) returns (CreateBlogResponse);
+  rpc ReadBlog (ReadBlogRequest) returns (ReadBlogResponse);
+}
