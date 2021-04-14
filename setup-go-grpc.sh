@@ -8,6 +8,9 @@ export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 # make GOPATH and src
 mkdir go && mkdir go/src
 
-# install protobuf compiler and grpc 
+# install protobuf compiler and grpc
 sudo apt install -y protobuf-compiler
 go get -u google.golang.org/grpc
+
+# Change terminal color
+export PS1="\e[0;36m\W\$\e[m "
